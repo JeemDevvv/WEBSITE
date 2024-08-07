@@ -1,0 +1,27 @@
+@media screen and (max-width: 1288px) {
+    .first-header {
+        display: none;
+    }
+
+    .jollie-center {
+        display: none;
+    }
+
+    .start-order {
+        display: none;
+    }
+
+    .sidebar{
+        position: fixed;
+        top: 0px;
+        overflow: scroll;
+    }
+}
+
+@media screen and (min-width: 1288px){
+    .hamburger {
+        display: none;
+    }
+
+    
+}

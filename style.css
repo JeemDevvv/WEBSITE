@@ -8,6 +8,9 @@
 
 :root {
     --red: #E31837;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray: #222222;
 }
 
 html {
@@ -22,6 +25,88 @@ header {
     background-color: white;
     box-shadow: 0px 20px 3px -20px #111;
 }
+
+/* SIDE BAR MENU */
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 50px;
+    left: 25px;
+    z-index: 100;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: var(--red);
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -600px;
+    width: 600px;
+    height: 100%;
+    background-color: var(--white);
+    padding-top: 150px;
+    transition: 0.3s;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.sidebar ul li a {
+    color: var(--black);
+    text-decoration: none;
+    padding: 20px 50px;
+    display: block;
+    font-size: 100%;
+}
+
+.menu-toggle:checked + .hamburger + .sidebar {
+    left: 0;
+}
+
+.jollie-globe p{
+    background-color: var(--red);
+    width: 100%;
+    position: relative;
+    top: 20;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+    font-size: 130%;
+}
+
+li .arrow-right {
+    position: absolute;
+    right: 0;
+    padding-right: 50px;
+    font-size: 30px;
+    color: var(--red);
+}
+
+li .jolli-merchs {
+    font-size: 24px;
+    color: black;
+    margin: 0px 0px 0px 10px;
+}
+/* END */
 
 .jollibee-container {
     position: relative;
@@ -98,6 +183,7 @@ nav a{
     width: 70%;
     line-height: 50px;
     padding-bottom: 20px;
+    color: var(--gray);
 }
 
 .p-chicken h4 {
@@ -106,16 +192,18 @@ nav a{
     width: 60%;
     line-height: 30px;
     padding-bottom: 20px;
+    color: var(--gray);
 }
 
 .burgah p {
     font-weight: 600;
+    color: var(--gray);
 }
 
 .order {
     position: absolute;
     background-color: var(--red);
-    color: white;
+    color: var(--white);
     margin-top: 20px;
     height: 50px;
     width: 200px;
@@ -146,4 +234,45 @@ nav a{
     left: 10px;
     font-size: 20px;
     top: 5px;
+}
+
+/* MERCH JOLLIBEE */
+
+.jollibee-merch {
+    background-color: rgba(95, 158, 160, 0.178);
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.merch-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.right-merch-container {
+    display: inline-block;
+    width: 50%;
+    background-color: green;
+    width: 30vw;
+    height: 80vh;
+}
+
+.right-merch-container img:nth-child(1) {
+    border: white 5px solid;
+    transform: rotate(-14deg);
+    height: 250px;
+}
+.right-merch-container img:nth-child(2) {
+    position: absolute;
+    border: white 5px solid;
+    transform: rotate(-15deg);
+    height: 250px;
+}
+.right-merch-container img:nth-child(3) {
+    border: white 5px solid;
+    transform: rotate(20deg);
+    height: 250px;
 }

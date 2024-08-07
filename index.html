@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <title>Hello World </title>
 </head>
 <body>
@@ -30,6 +31,29 @@
                 <button class="start-order"><span>START ORDER</span></button>
             </div>
 
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <nav class="sidebar">
+                <div class="jollie-globe">
+                    <p><a href="#" style="color: white; text-decoration: none; font-weight: 700;"><ion-icon name="globe-outline" class="globe-icon" style="position: relative;
+                        right: 5px;
+                        top: 3px;"></ion-icon>Jollibee Hello World</a></p>
+                </div>
+                <ul>
+                    <li><a href="#"><span>Menu <ion-icon name="chevron-forward-outline" class="arrow-right"></ion-icon></span></a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Coupon & Deals</a></li>
+                    <li><a href="#">Jolly Merch Shop <ion-icon name="pricetags-outline" class="jolli-merchs"></ion-icon></a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Buzz Room</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">FAQS</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -51,12 +75,26 @@
         </div>
     </div>
 
-    <div class="jolli-merch">
-
+    <div class="jollibee-merch">
+        <div class="merch-container">
+            <div class="left-container">
+                <h3>NOW OPEN</h3>
+                <h2>Jolly Merch Shop</h2>
+                <p><strong>Get your favorite merch or less</strong></p>
+                <div class="shop-now">
+                    <a href="#"><span>SHOP NOW <ion-icon name="pricetags-outline" class="jolli-merchs"></ion-icon></span></a>
+                </div>
+            </div>
+            <div class="right-merch-container">
+                <img src="longsleeve.webp" alt="Long Sleeve Merch" class="first-pic">
+                <img src="shirt.webp" alt="Shirt Jollibee" class="second-pic">
+                <img src="shirtt.webp" alt="T-shirt of Jollibee" class="third-pic">
+            </div>
+        </div>
     </div>
 
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
